@@ -1,0 +1,47 @@
+{
+  "name": "recall",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Tell me when something I own is recalled. Watches EU Safety Gate, German medicine shortages, US vehicle campaigns and software end-of-support for the specific things on your list, and grades how sure each match is. Zero dependencies, no account.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "bin": {
+    "recall": "./bin/recall.mjs"
+  },
+  "scripts": {
+    "help": "node bin/recall.mjs help",
+    "check": "node bin/recall.mjs check",
+    "list": "node bin/recall.mjs list",
+    "notices": "node bin/recall.mjs notices",
+    "doctor": "node bin/recall.mjs doctor",
+    "mcp": "node mcp-server.mjs",
+    "test": "node test/run.mjs",
+    "test:live": "node test/live.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gledach/recall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gledach/recall/issues"
+  },
+  "homepage": "https://github.com/gledach/recall#readme",
+  "keywords": [
+    "recall",
+    "safety",
+    "product-safety",
+    "safety-gate",
+    "rapex",
+    "end-of-life",
+    "eol",
+    "nhtsa",
+    "bfarm",
+    "inventory",
+    "mcp",
+    "cli",
+    "zero-dependencies"
+  ]
+}

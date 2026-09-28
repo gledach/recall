@@ -1,0 +1,21 @@
+# What you own. This is the whole point: it stays on your machine.
+config/inventory.local.mjs
+
+# Cached source data and the notice ledger.
+data/
+
+# OS and editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# There is no build step, so nothing here is generated.
+node_modules/
+
+# Raw register downloads kept while working on a parser. Fixtures belong in
+# test/fixtures/ and are committed deliberately; these are not.
+/*.csv
+/*.xml
+/inv-*.mjs
+/data-*/
