@@ -17,8 +17,8 @@ export default async function ack({ flags, _ }) {
       console.log(`  ${k}${v.note ? c.dim(`  (${v.note})`) : ''}`);
     }
     console.log('');
-    console.log(c.dim('  recall ack <key>            stop reporting this one'));
-    console.log(c.dim('  recall ack <key> --undo     start reporting it again'));
+    console.log(c.dim('  gledach-recall ack <key>            stop reporting this one'));
+    console.log(c.dim('  gledach-recall ack <key> --undo     start reporting it again'));
     console.log('');
     return 0;
   }

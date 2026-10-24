@@ -8,7 +8,7 @@
  *
  *   Read only. Nothing here writes to the inventory or acknowledges a notice.
  *   Acknowledging is a person deciding they have dealt with something, and an
- *   assistant cannot make that decision on their behalf. `recall ack` is a CLI
+ *   assistant cannot make that decision on their behalf. `gledach-recall ack` is a CLI
  *   command for exactly that reason.
  *
  *   Every result carries its coverage. A model asked "is my car recalled?" will

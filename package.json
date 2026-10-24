@@ -1,5 +1,5 @@
 {
-  "name": "recall",
+  "name": "gledach-recall",
   "version": "0.1.0",
   "private": false,
   "description": "Tell me when something I own is recalled. Watches EU Safety Gate, German medicine shortages, US vehicle campaigns and software end-of-support for the specific things on your list, and grades how sure each match is. Zero dependencies, no account.",
@@ -9,7 +9,7 @@
     "node": ">=22.0.0"
   },
   "bin": {
-    "recall": "./bin/recall.mjs"
+    "gledach-recall": "./bin/recall.mjs"
   },
   "scripts": {
     "help": "node bin/recall.mjs help",

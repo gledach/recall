@@ -87,7 +87,7 @@ export default async function check({ flags }) {
           (f.notice.date ? c.dim(`  ·  ${dayLabel(f.notice.date)}`) : ''),
       );
       if (f.notice.url) console.log(c.dim(`      ${f.notice.url}`));
-      console.log(c.dim(`      ack with: recall ack ${f.key}`));
+      console.log(c.dim(`      ack with: gledach-recall ack ${f.key}`));
       console.log('');
     }
   }

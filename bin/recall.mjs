@@ -17,7 +17,7 @@ const name = args._[0] ?? (args.flags.help || args.flags.h ? 'help' : 'help');
 
 const loader = COMMANDS[name];
 if (!loader) {
-  console.error(`recall: unknown command "${name}"`);
+  console.error(`gledach-recall: unknown command "${name}"`);
   console.error(`Try one of: ${Object.keys(COMMANDS).join(', ')}`);
   process.exit(2);
 }
@@ -27,7 +27,7 @@ try {
   const code = await mod.default({ ...args, _: args._.slice(1) });
   process.exit(typeof code === 'number' ? code : 0);
 } catch (err) {
-  console.error(`recall ${name}: ${err.message}`);
+  console.error(`gledach-recall ${name}: ${err.message}`);
   if (process.env.RECALL_DEBUG) console.error(err.stack);
   process.exit(1);
 }

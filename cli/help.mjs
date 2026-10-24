@@ -3,7 +3,7 @@ import { c } from '../core/format.mjs';
 export default function help() {
   const b = c.bold, d = c.dim;
   console.log(`
-${b('recall')} ${d('· tell me when something I own is recalled')}
+${b('gledach-recall')} ${d('· tell me when something I own is recalled')}
 
 Recalls and safety notices are published every week. They are published as a
 firehose about everyone's things, which is why nobody reads them. This checks
@@ -22,7 +22,7 @@ ${b('START HERE')}
 
   cp config/inventory.default.mjs config/inventory.local.mjs
   ${d('# edit it: the things you own, with model numbers off the label')}
-  recall check
+  gledach-recall check
 
 ${b('HOW SURE IT IS')}
 
@@ -40,8 +40,8 @@ ${b('HOW SURE IT IS')}
 
 ${b('KEEPING IT QUIET')}
 
-  recall ack <key>     ${d('# dealt with, stop showing it')}
-  recall ack           ${d('# list what you have acknowledged')}
+  gledach-recall ack <key>     ${d('# dealt with, stop showing it')}
+  gledach-recall ack           ${d('# list what you have acknowledged')}
 
   Without this, every run re-reports the same things and you stop reading.
 

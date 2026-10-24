@@ -14,8 +14,13 @@ deserves your attention.
 Zero dependencies. No account, no key, no signup for any of the four registers.
 Node 22+.
 
+The command is `gledach-recall`. Inside a clone, `node bin/recall.mjs` is that command
+and needs nothing on your PATH. `npm link` installs `gledach-recall`. Nothing named
+`recall` is installed. npm already publishes an unrelated package under that name, and
+Microsoft Recall is a different product. This package is `gledach-recall`.
+
 ```
-recall check
+gledach-recall check
 ```
 
 ```
@@ -26,7 +31,7 @@ recall check
       could cause cancer.
       exact: barcode 5060138820289 matches exactly  ·  Fri, 25/09
       https://ec.europa.eu/safety-gate-alerts/screen/search
-      ack with: recall ack by-barcode|safetygate|SR/02546/26
+      ack with: gledach-recall ack by-barcode|safetygate|SR/02546/26
 
   HIGH  The stomach tablets
       Shortage: Pantoprazol-Micro Labs 40 mg magensaftresistente Tabletten
@@ -128,21 +133,21 @@ no barcode, because it will match something unrelated and be reported as certain
 ## Commands
 
 ```sh
-recall check                     # the thing you actually run
-recall check --source=safetygate # one register
-recall check --confidence=exact  # only certain matches
-recall check --json              # for scripts and cron
-recall check --all               # include ones you acknowledged
-recall list                      # what is being watched, and by what
-recall notices                   # what past runs found
-recall ack <key>                 # stop reporting one notice
-recall ack <key> --undo          # start again
-recall ack                       # what have I already dealt with?
-recall doctor                    # what works, and what this cannot see
-recall help
+gledach-recall check                     # the thing you actually run
+gledach-recall check --source=safetygate # one register
+gledach-recall check --confidence=exact  # only certain matches
+gledach-recall check --json              # for scripts and cron
+gledach-recall check --all               # include ones you acknowledged
+gledach-recall list                      # what is being watched, and by what
+gledach-recall notices                   # what past runs found
+gledach-recall ack <key>                 # stop reporting one notice
+gledach-recall ack <key> --undo          # start again
+gledach-recall ack                       # what have I already dealt with?
+gledach-recall doctor                    # what works, and what this cannot see
+gledach-recall help
 ```
 
-`recall doctor` is worth running once. It ends with a section called "What this
+`gledach-recall doctor` is worth running once. It ends with a section called "What this
 cannot see", which is the honest version of a feature list.
 
 ## How sure is it?
@@ -238,7 +243,7 @@ a model asked "is my car recalled?" will otherwise turn "no notices found" into
 Claude Code:
 
 ```sh
-claude mcp add recall -- node /absolute/path/to/recall/mcp-server.mjs
+claude mcp add gledach-recall -- node /absolute/path/to/recall/mcp-server.mjs
 ```
 
 Any other MCP client: run `node mcp-server.mjs`, stdio, JSON-RPC 2.0.

@@ -91,7 +91,7 @@ test('ack with no key lists the ledger and shows how to use it', () => {
   // so it reports rather than failing.
   const out = run(['ack']);
   assert.match(out, /acknowledged/i);
-  assert.match(out, /recall ack <key>/, 'it should show the usage it expects');
+  assert.match(out, /gledach-recall ack <key>/, 'it should show the usage it expects');
   assert.match(out, /--undo/, 'and how to reverse itself');
 });
 

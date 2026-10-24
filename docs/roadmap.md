@@ -61,7 +61,7 @@ by what people wrote down, not by the algorithm.
 ## Operational
 
 ### Scheduled runs
-There is no daemon and no cron entry. `recall check --json` is script-friendly and
+There is no daemon and no cron entry. `gledach-recall check --json` is script-friendly and
 that is currently the whole story. A once-daily run is the sane cadence, since the
 registers publish weekly. Anything that runs unattended has to decide how to
 notify, which is a real design question rather than a missing flag.

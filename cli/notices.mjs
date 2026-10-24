@@ -14,7 +14,7 @@ export default async function notices({ flags }) {
   console.log('');
 
   if (rows.length === 0) {
-    console.log(c.dim('  Nothing recorded yet. Run `recall check`.'));
+    console.log(c.dim('  Nothing recorded yet. Run `gledach-recall check`.'));
     console.log('');
     return 0;
   }

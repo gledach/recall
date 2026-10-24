@@ -17,7 +17,7 @@ export default async function doctor({ flags }) {
   const bad = (l, d = '') => { problems += 1; console.log(`  ${c.red('FAIL')}  ${l}${d ? `  ${c.dim(d)}` : ''}`); };
 
   console.log('');
-  console.log(c.bold('recall doctor'));
+  console.log(c.bold('gledach-recall doctor'));
   console.log('');
 
   const major = Number(process.versions.node.split('.')[0]);
